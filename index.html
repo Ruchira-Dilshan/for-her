@@ -832,6 +832,407 @@
             opacity: 0.5;
             cursor: not-allowed;
         }
+
+        /* ===== MOBILE OPTIMIZATION ===== */
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                padding: 0;
+                overflow-y: auto;
+            }
+
+            .card {
+                padding: 30px 20px;
+                max-width: 100%;
+                width: 95%;
+                border-radius: 20px;
+                margin: 20px auto;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                min-height: auto;
+            }
+
+            h2.quote-text {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .couple-img {
+                height: 250px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                gap: 12px;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .btn {
+                padding: 14px 28px;
+                font-size: 0.95rem;
+                width: 100%;
+            }
+
+            .btn-no, .btn-hate {
+                position: static !important;
+                width: 100% !important;
+                left: auto !important;
+                top: auto !important;
+                margin-top: 8px;
+            }
+
+            .splash-title {
+                font-size: 1.8rem;
+            }
+
+            .splash-subtitle {
+                font-size: 1rem;
+            }
+
+            .splash-heart {
+                font-size: 3.5rem;
+                margin-bottom: 15px;
+            }
+
+            .splash-btn {
+                padding: 12px 35px;
+                font-size: 1rem;
+            }
+
+            .slideshow-card {
+                padding: 40px 20px;
+                max-width: 100%;
+                border-radius: 20px;
+            }
+
+            .quote-display {
+                font-size: 1.3rem;
+                margin-bottom: 30px;
+                min-height: 150px;
+                line-height: 1.8;
+                word-spacing: 0.1em;
+            }
+
+            .slide-counter {
+                font-size: 0.85rem;
+                margin-bottom: 15px;
+            }
+
+            #slideHearts {
+                font-size: 1.5rem;
+                letter-spacing: 8px;
+            }
+
+            .slide-buttons {
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 20px;
+            }
+
+            .slide-btn {
+                padding: 10px 24px;
+                font-size: 0.9rem;
+                width: 100%;
+            }
+
+            .puzzle-container {
+                padding: 30px 20px;
+                max-width: 100%;
+                border-radius: 20px;
+            }
+
+            .puzzle-title {
+                font-size: 1.4rem;
+                margin-bottom: 8px;
+            }
+
+            .puzzle-instruction {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .puzzle-grid {
+                grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+                gap: 8px;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .puzzle-tile {
+                padding: 10px;
+                font-size: 1rem;
+                border-radius: 8px;
+            }
+
+            .puzzle-slots {
+                gap: 6px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+
+            .puzzle-slot {
+                width: 45px;
+                height: 45px;
+                font-size: 0.95rem;
+                border-radius: 6px;
+            }
+
+            .puzzle-result {
+                font-size: 1.5rem;
+                margin-top: 15px;
+            }
+
+            .puzzle-next-btn {
+                padding: 12px 24px;
+                font-size: 0.95rem;
+                margin-top: 15px;
+                width: 90%;
+            }
+
+            .floating-heart {
+                font-size: 2rem;
+            }
+
+            .mouse-trail {
+                display: none;
+            }
+
+            .splash-screen,
+            .slideshow-screen,
+            .puzzle-screen {
+                padding: 20px;
+            }
+
+            .victory-text {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .card {
+                padding: 20px 15px;
+                max-width: 100%;
+                width: 100%;
+                border-radius: 15px;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+
+            h2.quote-text {
+                font-size: 0.95rem;
+            }
+
+            .couple-img {
+                height: 200px;
+                margin-bottom: 15px;
+                border-radius: 12px;
+                border: 2px solid rgba(255, 179, 198, 0.4);
+            }
+
+            .btn-container {
+                gap: 10px;
+                margin-top: 15px;
+            }
+
+            .btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+                border-radius: 40px;
+            }
+
+            .btn-no, .btn-hate {
+                position: static !important;
+                width: 100% !important;
+                left: auto !important;
+                top: auto !important;
+                margin-top: 8px;
+            }
+
+            .splash-title {
+                font-size: 1.5rem;
+            }
+
+            .splash-subtitle {
+                font-size: 0.95rem;
+            }
+
+            .splash-heart {
+                font-size: 3rem;
+                margin-bottom: 12px;
+            }
+
+            .splash-btn {
+                padding: 10px 30px;
+                font-size: 0.95rem;
+            }
+
+            .slideshow-card {
+                padding: 30px 15px;
+                border-radius: 15px;
+            }
+
+            .quote-display {
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                min-height: 120px;
+                line-height: 1.7;
+            }
+
+            .slide-counter {
+                font-size: 0.8rem;
+            }
+
+            #slideHearts {
+                font-size: 1.2rem;
+                letter-spacing: 6px;
+            }
+
+            .slide-btn {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+
+            .puzzle-container {
+                padding: 20px 15px;
+                border-radius: 15px;
+            }
+
+            .puzzle-title {
+                font-size: 1.2rem;
+            }
+
+            .puzzle-instruction {
+                font-size: 0.95rem;
+                margin-bottom: 15px;
+            }
+
+            .puzzle-grid {
+                grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+                gap: 6px;
+                margin-bottom: 15px;
+            }
+
+            .puzzle-tile {
+                padding: 8px;
+                font-size: 0.9rem;
+                border-radius: 6px;
+            }
+
+            .puzzle-slot {
+                width: 40px;
+                height: 40px;
+                font-size: 0.85rem;
+                border-radius: 5px;
+            }
+
+            .puzzle-result {
+                font-size: 1.2rem;
+                margin-top: 12px;
+            }
+
+            .puzzle-next-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                margin-top: 12px;
+                width: 95%;
+            }
+
+            .floating-heart {
+                font-size: 1.5rem;
+            }
+
+            .splash-particle::before {
+                font-size: 1.5rem;
+            }
+
+            .card:hover {
+                transform: none;
+            }
+
+            .couple-img:hover {
+                transform: none;
+                filter: none;
+            }
+
+            .btn:hover {
+                transform: none;
+            }
+
+            .btn-yes:hover {
+                transform: scale(1.05);
+                filter: brightness(1.05);
+            }
+
+            .splash-btn:hover {
+                transform: scale(1.05);
+            }
+
+            .slide-btn:hover {
+                transform: scale(1.05);
+            }
+
+            .puzzle-next-btn:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        @media (max-height: 600px) and (orientation: landscape) {
+            body {
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .card {
+                padding: 20px;
+                max-width: 90%;
+            }
+
+            h2 {
+                font-size: 1rem;
+                margin-bottom: 10px;
+                min-height: auto;
+            }
+
+            .couple-img {
+                height: 180px;
+                margin-bottom: 10px;
+            }
+
+            .btn-container {
+                gap: 8px;
+                margin-top: 10px;
+                flex-wrap: wrap;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+
+            .splash-card, .slideshow-card, .puzzle-container {
+                padding: 25px 15px;
+            }
+
+            .splash-heart {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -909,6 +1310,7 @@
         let currentSlide = 0;
         let puzzleSlots = [];
         let puzzleState = {};
+        let selectedTile = null; // For mobile touch support
 
         // ====== SPLASH SCREEN FUNCTIONS ======
         function startSlideshow() {
@@ -1022,6 +1424,14 @@
                 slot.textContent = '';
                 slot.ondrop = (e) => dropTile(e, i);
                 slot.ondragover = (e) => e.preventDefault();
+                // Touch support for mobile
+                slot.addEventListener('touchend', (e) => {
+                    e.preventDefault();
+                    if (window.selectedTile) {
+                        dropTile({ dataTransfer: { getData: (key) => window.selectedTile[key] } }, i);
+                        window.selectedTile = null;
+                    }
+                });
                 puzzleSlotsDom.appendChild(slot);
                 puzzleState[i] = null;
             }
@@ -1035,6 +1445,15 @@
                 tile.textContent = shuffled[i];
                 tile.draggable = true;
                 tile.ondragstart = (e) => dragStart(e, i, shuffled[i]);
+                // Touch support for mobile
+                tile.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    window.selectedTile = { letter: shuffled[i], tileIndex: i };
+                    tile.style.opacity = '0.6';
+                });
+                tile.addEventListener('touchend', () => {
+                    if (tile) tile.style.opacity = '1';
+                });
                 puzzleGrid.appendChild(tile);
             }
 
@@ -1109,8 +1528,9 @@
         // ====== CONFETTI FUNCTION ======
         function createConfetti() {
             const colors = ['#ff477e', '#ff85a1', '#ffb3c6', '#ffc2d1', '#ffe5ec'];
+            const confettiCount = isMobileDevice ? 30 : 50; // Fewer particles on mobile
             
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < confettiCount; i++) {
                 const confetti = document.createElement('div');
                 confetti.className = 'confetti';
                 confetti.style.left = Math.random() * window.innerWidth + 'px';
@@ -1161,6 +1581,9 @@
             }
         ];
 
+        // Detect mobile device (define EARLY so it's available everywhere)
+        const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
         let currentStep = 0;
         let mouseTrailEnabled = true;
 
@@ -1173,9 +1596,9 @@
 
         // ====== MODERN INTERACTIVE EFFECTS ======
 
-        // Mouse Trail Effect (Cursor Glow)
+        // Mouse Trail Effect (Cursor Glow) - Disabled on mobile
         document.addEventListener('mousemove', (e) => {
-            if (!mouseTrailEnabled) return;
+            if (!mouseTrailEnabled || isMobileDevice) return;
             
             const trail = document.createElement('div');
             trail.className = 'mouse-trail';
@@ -1185,25 +1608,6 @@
             
             setTimeout(() => trail.remove(), 800);
         });
-
-        // Confetti Explosion
-        function createConfetti() {
-            const colors = ['#ff477e', '#ff85a1', '#ffb3c6', '#ffc2d1', '#ffe5ec'];
-            
-            for (let i = 0; i < 50; i++) {
-                const confetti = document.createElement('div');
-                confetti.className = 'confetti';
-                confetti.style.left = Math.random() * window.innerWidth + 'px';
-                confetti.style.top = '-10px';
-                confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-                confetti.style.setProperty('--tx', (Math.random() - 0.5) * 300 + 'px');
-                confetti.style.animation = `confettiFall ${2 + Math.random() * 1.5}s ease-out forwards`;
-                
-                document.body.appendChild(confetti);
-                
-                setTimeout(() => confetti.remove(), 3500);
-            }
-        }
 
         // Smooth Page Transition
         function transitionStep() {
@@ -1323,43 +1727,47 @@
         function makeButtonRun(button) {
             let listenerAttached = false;
 
-            const avoidMouse = (e) => {
-                const btnRect = button.getBoundingClientRect();
-                const mouseX = e.clientX;
-                const mouseY = e.clientY;
-                const btnX = btnRect.left + btnRect.width / 2;
-                const btnY = btnRect.top + btnRect.height / 2;
+            if (!isMobileDevice) {
+                // Desktop: Mouse avoidance
+                const avoidMouse = (e) => {
+                    const btnRect = button.getBoundingClientRect();
+                    const mouseX = e.clientX;
+                    const mouseY = e.clientY;
+                    const btnX = btnRect.left + btnRect.width / 2;
+                    const btnY = btnRect.top + btnRect.height / 2;
 
-                const distance = Math.hypot(mouseX - btnX, mouseY - btnY);
+                    const distance = Math.hypot(mouseX - btnX, mouseY - btnY);
 
-                // Teleport button if mouse gets within 85px
-                if (distance < 85) {
-                    const cardRect = document.getElementById('quizCard').getBoundingClientRect();
-                    
-                    const randomX = Math.random() * (cardRect.width - btnRect.width - 40) + 20;
-                    const randomY = Math.random() * (cardRect.height - btnRect.height - 120) + 40;
+                    // Teleport button if mouse gets within 85px
+                    if (distance < 85) {
+                        const cardRect = document.getElementById('quizCard').getBoundingClientRect();
+                        
+                        const randomX = Math.random() * (cardRect.width - btnRect.width - 40) + 20;
+                        const randomY = Math.random() * (cardRect.height - btnRect.height - 120) + 40;
 
-                    button.style.position = 'fixed';
-                    button.style.left = `${cardRect.left + randomX}px`;
-                    button.style.top = `${cardRect.top + randomY}px`;
-                    
-                    // Add wiggle animation
-                    button.style.animation = 'btnPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                        button.style.position = 'fixed';
+                        button.style.left = `${cardRect.left + randomX}px`;
+                        button.style.top = `${cardRect.top + randomY}px`;
+                        
+                        // Add wiggle animation
+                        button.style.animation = 'btnPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    }
+                };
+
+                if (!listenerAttached) {
+                    window.addEventListener('mousemove', avoidMouse);
+                    listenerAttached = true;
                 }
-            };
-
-            if (!listenerAttached) {
-                window.addEventListener('mousemove', avoidMouse);
-                listenerAttached = true;
+            } else {
+                // Mobile: Tap to move (simplified for better UX)
+                button.style.position = 'static';
+                button.style.width = '100%';
+                
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    // Just let it be tapped normally on mobile
+                }, { passive: false });
             }
-            
-            // Mobile safe trick
-            button.addEventListener('touchstart', () => {
-                const cardRect = document.getElementById('quizCard').getBoundingClientRect();
-                const randomX = Math.random() * (cardRect.width - 120);
-                button.style.position = 'fixed';
-                button.style.left = `${cardRect.left + randomX}px`;
-            });
         }
 
         // Spawning background particle hearts with variation
